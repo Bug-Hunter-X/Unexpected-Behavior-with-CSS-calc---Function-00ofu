@@ -1,0 +1,18 @@
+To resolve the issue, ensure that the parent element has a defined width. You can achieve this by setting a fixed width, a percentage width relative to its parent (which also needs to have a defined width), or using other CSS properties such as `min-width` or `max-width` to set boundaries.  Here's an example:
+
+```css
+/* bugSolution.css */
+#parent {
+  width: 80%; /* Or a fixed width like 800px */
+}
+
+#child {
+  width: calc(100% - 10px);
+}
+```
+Alternatively, if the intention was to create a relative width from viewport width, consider using `vw` units instead of `calc()`.
+```css
+#child {
+  width: 90vw;
+}
+```
