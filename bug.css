@@ -1,0 +1,1 @@
+The CSS property `calc()` is used incorrectly, resulting in unexpected behavior.  For example, `width: calc(100% - 10px);` might not work as expected if the parent element doesn't have a defined width.
